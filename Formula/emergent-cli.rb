@@ -1,26 +1,26 @@
 class EmergentCli < Formula
   desc "Command-line interface for the Emergent Knowledge Base platform"
   homepage "https://github.com/Emergent-Comapny/emergent"
-  version "0.2.1"
+  version "0.2.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Emergent-Comapny/emergent/releases/download/cli-v0.2.1/emergent-cli-darwin-arm64.tar.gz"
-      sha256 "f4da3e7e44476a7e96eee0dedf15b8ffaa72719a434158324d742878349d6db8"
+      url "https://github.com/Emergent-Comapny/emergent/releases/download/cli-v0.2.2/emergent-cli-darwin-arm64.tar.gz"
+      sha256 "1fe9e9b58c3cbdeba28aff0575abb9916621841c986c5d7576f9b40dbfa98fa7"
     else
-      url "https://github.com/Emergent-Comapny/emergent/releases/download/cli-v0.2.1/emergent-cli-darwin-amd64.tar.gz"
-      sha256 "c527a56ca3d85b78302a018a9a1570dcabfb0cc511842ab85f462b7a08a682e7"
+      url "https://github.com/Emergent-Comapny/emergent/releases/download/cli-v0.2.2/emergent-cli-darwin-amd64.tar.gz"
+      sha256 "2885f098b25776c37c08c7d205d086f4281efab9495c0614c57616d0d0f66c24"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Emergent-Comapny/emergent/releases/download/cli-v0.2.1/emergent-cli-linux-arm64.tar.gz"
-      sha256 "1a6a3e175f3e4231d352e53fd5ec2b67047d21603a9aadce7aa88a7ee4cdcdcc"
+      url "https://github.com/Emergent-Comapny/emergent/releases/download/cli-v0.2.2/emergent-cli-linux-arm64.tar.gz"
+      sha256 "92a0b18425fe7f629953c84dc8a901e56f9adcc11c2d0f6447bbdbc01d676d11"
     else
-      url "https://github.com/Emergent-Comapny/emergent/releases/download/cli-v0.2.1/emergent-cli-linux-amd64.tar.gz"
-      sha256 "5721f9cfcac35c969d769d593853356ec834f0e575a44191887b3b9c508c2968"
+      url "https://github.com/Emergent-Comapny/emergent/releases/download/cli-v0.2.2/emergent-cli-linux-amd64.tar.gz"
+      sha256 "79e066ef747f77496643cdeb7b69fecf3a2f31cb631fa6d178e3f76c1cbb591b"
     end
   end
 
